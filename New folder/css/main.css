@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "open Sans", "Raleway", "Poppins" ;
+    animation: myanimation 5s infinite;
+    overflow-x: hidden;
+}
+
+/************************** Header  **************************************/
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.top-nav .lead {
+    color: #f2f2f2;
+    text-align: left;
+    padding: 14px 16px;
+    font-size: 17px;
+    font-weight: 600;
+} 
+
+.top-nav-nav ul {
+    list-style: none;
+    width: 100%;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.top-nav-nav li {
+    display: inline;
+    float: left;
+    border-right: 1px solid rgb(250, 250, 250);
+    
+}
+
+.top-nav-nav li:last-child {
+    border-right: none;
+}
+
+.top-nav-nav li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+    text-align: center;
+    font-size: 0.7em;
+    font-family: "open Sans", "Raleway", sans-serif;
+    font-weight: 600;
+}
+
+.top-nav a:hover {
+    border-bottom: 2px solid #2c4964;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+/************* navbar section*******************/
+
+.navbar-content{
+    background: transparent;
+    justify-content: space-between;
+    display: flex;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.dropdown-menu {
+    background: none repeat scroll 0;
+    color: rgb(250, 250, 250);
+    border: none;
+}
+
+.navbar-brand {
+    font-family: "open Sans", "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #282A35;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-item .nav-link {
+    color: #282A35;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.dropdown-menu .dropdown-item {
+    color: rgba(44, 73, 100,);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+.dropdown-item:hover {
+    background: none;
+}
+
+.dropdown:hover, .nav-link:hover, .navbar-brand:hover, .dropdown-item:hover {
+    color: rgb(250, 250, 250);
+    border-bottom: 2px solid #282A35;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .carousel-control-next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    z-index: 10;
+    padding: 20px 10px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  }
+
+  .carousel-caption .text {
+    font-size: 16px;
+    position: absolute;
+    top: 15%;
+  }
+
+  .carousel-caption h2 {
+    position: absolute;
+    top: 25%;
+    left: 8px;
+  }
+
+  .carousel-caption .btn {
+    font-size: 18px;
+    padding: 10px;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .carousel-caption .btn:hover {
+    background: rgb(250, 250, 250);
+    color: rgb(44, 73, 100);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+  }/************* end navbar section*******************/
+
+  /************* Banner section*******************/
+  section {
+    margin: 40px 0;
+  }
+
+  .banner-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .col-img {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    transition: 0.5s ease;
+    border: 1px solid rgba(44, 73, 100, 0.3);
+}
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.col-img:hover .image {
+    opacity: 0.5;
+    display: block;
+}
+
+.col-img:hover .lead2 {
+    opacity: 1;
+}
+
+.lead2 {
+    color: #2c4964;
+    position: absolute;
+    padding: 14px 16px;
+    top: 10%;
+    left: 10%;
+    bottom: 0%;
+  text-align: center;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+}
+.lead2 #head {
+    top: -100%;
+    left: -35%;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+}
+
+.lead2 .lead1 {
+    top: -99%;
+    left: -45%;
+    font-size: 0.8em;
+    font-weight: 300;
+    line-height: 0.1em;
+    position: relative;
+}
+
+/** *************** Preview Section ***************************/
+.preview-content h1 {
+    font-family: "open Sans", "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+    color: rgb(14, 13, 13);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pill-caption {
+    color: #2c4964;
+    position: relative;
+    padding: 14px 16px;
+    bottom: 0%;
+    text-align: left;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+}
+
+.nav-tabs .nav-item .nav-link {
+    color: rgba(44, 73, 100, 0.8);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+.nav-tabs .nav-item .nav-link:hover {
+    color: rgb(44, 73, 100);
+    font-weight: 600;
+    border-bottom: 2px solid rgb(44, 73, 100);
+}
